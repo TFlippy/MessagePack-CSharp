@@ -19,7 +19,7 @@ using MessagePack.Resolvers;
 using Newtonsoft.Json;
 using ProtoBuf;
 using SharedData;
-using UnityEngine;
+//using UnityEngine;
 using ZeroFormatter;
 
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter

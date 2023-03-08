@@ -3,8 +3,10 @@
   <PropertyGroup>
     <AssemblyName>mpc</AssemblyName>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
-    <LangVersion>10</LangVersion>
+    <!--<TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>-->
+    <!--<LangVersion>10</LangVersion>-->
+    <TargetFrameworks>net8.0</TargetFrameworks>
+    <LangVersion>11</LangVersion>
     <Nullable>enable</Nullable>
     <IsPackable>true</IsPackable>
     <PackAsTool>true</PackAsTool>

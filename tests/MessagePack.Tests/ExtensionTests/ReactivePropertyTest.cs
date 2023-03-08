@@ -9,7 +9,7 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MessagePack.Formatters;
-using MessagePack.ReactivePropertyExtension;
+//using MessagePack.ReactivePropertyExtension;
 using MessagePack.Resolvers;
 using Reactive.Bindings;
 using Xunit;

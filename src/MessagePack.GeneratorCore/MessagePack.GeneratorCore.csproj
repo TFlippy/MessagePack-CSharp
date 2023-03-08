@@ -1,12 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>11</LangVersion>
+
+    <!--<TargetFramework>netstandard2.0</TargetFramework>-->
     <RootNamespace>MessagePackCompiler</RootNamespace>
 
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\opensource.snk</AssemblyOriginatorKeyFile>
-    <LangVersion>9</LangVersion>
+    <!--<LangVersion>9</LangVersion>-->
     <Nullable>enable</Nullable>
   </PropertyGroup>
 

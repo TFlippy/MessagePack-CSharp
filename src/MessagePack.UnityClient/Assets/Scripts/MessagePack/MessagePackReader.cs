@@ -46,10 +46,10 @@ namespace MessagePack
         /// Initializes a new instance of the <see cref="MessagePackReader"/> struct.
         /// </summary>
         /// <param name="readOnlySequence">The sequence to read from.</param>
-        public MessagePackReader(in ReadOnlySequence<byte> readOnlySequence)
+        public MessagePackReader(scoped in ReadOnlySequence<byte> readOnlySequence)
             : this()
         {
-            this.reader = new SequenceReader<byte>(readOnlySequence);
+            this.reader = new SequenceReader<byte>(in readOnlySequence);
             this.Depth = 0;
         }
 

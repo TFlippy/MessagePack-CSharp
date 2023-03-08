@@ -1,8 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net472;netcoreapp3.1;net6.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+    <LangVersion>11</LangVersion>
+    <!--<TargetFrameworks>net472;netcoreapp3.1;net6.0</TargetFrameworks>-->
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>10</LangVersion>
+    <!--<LangVersion>10</LangVersion>-->
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
     <NoWarn>$(NoWarn);CS1701</NoWarn>
@@ -16,10 +18,14 @@
     <Compile Include="..\..\src\MessagePack.UnityClient\Assets\Scripts\Tests\ShareTests\**\*.cs" Exclude="..\..\src\MessagePack.UnityClient\Assets\Scripts\Tests\ShareTests\T4\**\*.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="ExtensionTests\ReactivePropertyTest.cs" />
+    <Compile Remove="ExtensionTests\UnityShimTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\sandbox\SharedData\SharedData.csproj" />
     <ProjectReference Include="..\..\src\MessagePack.ImmutableCollection\MessagePack.ImmutableCollection.csproj" />
-    <ProjectReference Include="..\..\src\MessagePack.ReactiveProperty\MessagePack.ReactiveProperty.csproj" />
-    <ProjectReference Include="..\..\src\MessagePack.UnityShims\MessagePack.UnityShims.csproj" />
+    <!--<ProjectReference Include="..\..\src\MessagePack.ReactiveProperty\MessagePack.ReactiveProperty.csproj" />-->
+    <!--<ProjectReference Include="..\..\src\MessagePack.UnityShims\MessagePack.UnityShims.csproj" />-->
     <ProjectReference Include="..\..\src\MessagePack\MessagePack.csproj" />
   </ItemGroup>
   <ItemGroup>
